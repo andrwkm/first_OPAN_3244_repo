@@ -3,3 +3,5 @@
 learning and practicing version control!
 
 Another sentence.
+
+New sentence from VS code.
