@@ -11,6 +11,15 @@ ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 
 def fetch_stocks_csv(symbol="NFLX"):
+    """Fetch stock data from Alpha Vantage as a CSV and return as a DataFrame.
+    
+    Params:
+        symbol (str): The stock symbol to fetch data for. Default is "NFLX".
+    
+    Return a pandas DataFrame containing the stock data.
+    """
+
+
     request_url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}&datatype=csv"
     stocks_df = read_csv(request_url)
     return stocks_df

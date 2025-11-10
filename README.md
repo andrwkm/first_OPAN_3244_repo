@@ -30,7 +30,17 @@ Install package dependencies:
 pip install -r requirements.txt
 ```
 
+## Configuration
 
+The stocks functionality requires an Alpha Vantage API key.
+Obtain a premium API Key from https://www.alphavantage.co/support/#api-key or from professor
+
+Create a `.env` file in the root directory of the project with the following content:
+
+```sh
+#this is .env file
+ALPHA_VANTAGE_API_KEY="_______"
+```
 
 ## Usage
 
