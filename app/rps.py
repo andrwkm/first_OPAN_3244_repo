@@ -22,6 +22,9 @@ def determine_winner(u, c):
         return "USER WINS"
     elif u == "scissors" and c == "scissors":
         return "TIE GAME"
+    
+def generate_random_choice():
+    return random.choice(VALID_OPTIONS)
 
 
 
@@ -42,7 +45,7 @@ if __name__ == "__main__":
 
     # GENERATE RANDOM COMPUTER CHOICE
 
-    computer_choice = random.choice(VALID_OPTIONS)
+    computer_choice = generate_random_choice()
     print("COMP:", computer_choice)
 
     # DETERMINE THE WINNER
