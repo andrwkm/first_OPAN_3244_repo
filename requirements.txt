@@ -9,3 +9,7 @@ flask
 
 # testing:
 pytest
+
+
+# deployment:
+gunicorn
